@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #7f54b3;
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: #fff;
+
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#value {
+  font-size: 6rem;
+  font-weight: 200;
+}
+
+.btn + .btn {
+  margin-left: 1rem;
+}
+
+.btn {
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  background: transparent;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 2rem;
+}
+
+footer a {
+  font-size: 1rem;
+  font-weight: inherit;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    gap: 1rem;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 2.5rem;
+  }
+
+  .btn + .btn {
+    margin-left: 0;
+  }
+}
